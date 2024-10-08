@@ -47,6 +47,7 @@ resource "yandex_vpc_subnet" "mch-subnet-a" {
 }
 
 resource "yandex_vpc_security_group" "vm-security-group" {
+  name        = "vm-security-group"
   description = "Security group for VM"
   network_id  = yandex_vpc_network.vm-net.id
 
@@ -67,6 +68,7 @@ resource "yandex_vpc_security_group" "vm-security-group" {
 }
 
 resource "yandex_vpc_security_group" "mch-security-group" {
+  name        = "mch-security-group"
   description = "Security group for the Managed Service for ClickHouse cluster"
   network_id  = yandex_vpc_network.mch-net.id
 
