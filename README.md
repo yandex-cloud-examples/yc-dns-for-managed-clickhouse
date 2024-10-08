@@ -1,5 +1,3 @@
-# Название сценария
+# Настройка Yandex Cloud DNS для доступа к кластеру Yandex Managed Service for ClickHouse® из других облачных сетей
 
-Описание сценария и инструкция по его применению.
-
-Для практических руководств обязательна ссылка на документацию.
+С помощью сервиса [Cloud DNS](https://yandex.cloud/ru/docs/dns) вы можете настроить доступ к кластеру [Managed Service for ClickHouse®](https://yandex.cloud/ru/docs/managed-clickhouse/), чтобы клиенты из других облачных сетей могли подключаться к кластеру по его FQDN. Настройка через Terraform описана в [практическом руководстве](https://yandex.cloud/ru/docs/tutorials/dataplatform/clickhouse-dns-peering), необходимый для настройки конфигурационный файл [nets-vm-mch.tf](nets-vm-mch.tf) расположен в этом репозитории.
